@@ -1,0 +1,75 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+/* 共通レイアウト */
+
+li {
+    list-style: none;
+}
+
+html {
+  font: 'Avenir Next', 'Hiragino Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    background-color: #86B404;
+}
+
+.header-logo {
+    float: left;
+    font-family: 'Tahoma', sans-serif;
+    letter-spacing: 2px;
+    padding: 22px 0px 23px 20px;
+}
+
+.header-logo a{
+  color: white;
+  font-size: 37px;
+  padding: 22px 10px 23px;
+}
+
+.header h1 {
+    float: left;
+}
+
+.header-list {
+    padding-right: 20px;
+    float: right;
+}
+
+.header-list li {
+    float: left;
+    line-height: 90px;
+    color: white;
+    border-left: 1px solid white;
+}
+
+.header-list li:last-child {
+    border-right: 1px solid white;
+}
+
+.header-list:first-child {
+    border-right: 1px solid white;
+}
+
+.header-list a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  padding: 0px 40px;
+  display: inline-block;
+}
+
+.header-list a:hover {
+    background-color: #688A08;
+}
