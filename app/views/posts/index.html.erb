@@ -1,2 +1,14 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
+<div claas="post-index">
+    <div class="post-container">
+        <% @posts.each do |post| %>
+        <div class="post-index-item">
+            <div class="post-left">
+                <%= post.content %>
+            </div>
+            <div class="post-right">
+                <%= link_to("削除", "/posts/#{post.id}/delete", {method: "post"}) %>
+            </div>
+        </div>
+        <% end %>
+    </div>
+</div>

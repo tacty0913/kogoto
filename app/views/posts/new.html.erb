@@ -1,2 +1,13 @@
-<h1>Posts#new</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
+<div class="new-container">
+    <h1 class="create-post">投稿する</h1>
+    <%= form_tag("/posts/create") do %>
+        <div class="form">
+            <div class="text-content">
+                <input class="text" type="text" name="text"></input>
+            </div>
+            <div class="submit">
+                <input type="submit" value="投稿"></input>
+            </div>
+        </div>
+    <% end %>
+</div>

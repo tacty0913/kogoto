@@ -1,3 +1,75 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.post-container {
+    margin: 60px auto;
+    width: 100%;
+}
+
+.post-index-item {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid;
+    background: rgba(255,255,250,5);
+    overflow: hidden;
+}
+
+.post-left {
+    float: left;
+    text-align: left;
+    width: 85%;
+}
+
+.post-right {
+    float: right;
+    width: 10%;
+    padding:2px 0px;
+    text-align: center;
+    background-color: #86B404;
+}
+
+.post-right a {
+    color: white;
+}
+
+/*--投稿ページCSS--*/
+
+.new-container {
+    width: 100%;
+    margin: 60px auto;
+}
+
+.create-post {
+    width: 80%;
+    margin: 0 auto 20px;
+    font-size: 43px;
+    color: rgba(164,164,164,0.6);
+    text-align: center;
+}
+
+.form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.text {
+    width: 75%;
+    height: 25px;
+    display: block;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.submit {
+    text-align: center;
+    margin: 15px;
+}
+
+.submit input {
+    width: 100px;
+    margin: 0 auto;
+    font-size: 20px;
+    display: inline-block;
+    background-color:  #86B404;
+    color: white;
+    border-radius: 10%;
+}

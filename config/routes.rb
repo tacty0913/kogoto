@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   
   get "posts/new" => "posts#new"
   get "posts/index" => "posts#index"
+  post "posts/create" => "posts#create"
+  post "posts/:id/delete" => "posts#delete"
 end
