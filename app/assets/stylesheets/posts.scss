@@ -1,5 +1,5 @@
 .post-container {
-    margin: 60px auto;
+    margin: 130px auto;
     width: 100%;
 }
 
@@ -24,6 +24,15 @@
     padding:2px 0px;
     text-align: center;
     background-color: #86B404;
+    border-radius: 8%;
+    box-shadow: 0 3px #1a7940;
+}
+
+.post-right:active {
+    position: relative;
+    top: 3px;
+    box-shadow: none;
+    border-radius: 8%;
 }
 
 .post-right a {
@@ -39,7 +48,7 @@
 
 .new-container h1 {
     width: 80%;
-    margin: 100px auto 20px;
+    margin: 170px auto 20px;
     font-size: 43px;
     color: rgba(164,164,164,0.6);
     text-align: center;
@@ -51,8 +60,14 @@
     padding: 20px 0;
 }
 
+.warning {
+    text-align: center;
+    font-size: 15px;
+    color: rgba(164,164,164,0.8);
+}
+
 .text {
-    width: 75%;
+    width: 63%;
     height: 25px;
     display: block;
     margin: 0 auto;
@@ -71,7 +86,21 @@
     display: inline-block;
     background-color:  #86B404;
     color: white;
-    border-radius: 10%;
+    box-shadow: 0 3px #1a7940;
+    border-radius: 8%;
+    cursor: pointer;
+}
+
+.submit input:active {
+    position: relative;
+    top: 3px;
+    box-shadow: none;
+    border-radius: 8%;
+}
+
+// 青枠削除 
+input:focus {
+    outline: 0;
 }
 
 .form-error {
