@@ -1,9 +1,14 @@
 <div class="new-container">
-    <h1 class="create-post">投稿する</h1>
+    <h1>投稿する</h1>
     <%= form_tag("/posts/create") do %>
         <div class="form">
+            <% @posts.errors.full_messages.each do |message| %>
+            <div class="form-error">
+                <%= message %>
+            </div>
+            <% end %>
             <div class="text-content">
-                <input class="text" type="text" name="text"></input>
+                <input class="text" type="text" name="content" value="<%= @posts.content %>"></input>
             </div>
             <div class="submit">
                 <input type="submit" value="投稿"></input>
